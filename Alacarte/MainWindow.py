@@ -207,6 +207,8 @@ class MainWindow(object):
     def loadMenu(self, iters, parent=None):
         for menu, show in self.editor.getMenus(parent):
             name = html.escape(menu.get_name(), quote=False)
+            if not show:
+                name = "<span foreground=\"grey\">%s</span>" % (name,)
 
             icon = util.getIcon(menu)
             iters[menu] = self.menu_store.append(iters[parent], (icon, name, menu))
@@ -226,6 +228,8 @@ class MainWindow(object):
                 assert False, 'should not be reached'
 
             name = html.escape(name, quote=False)
+            if not show:
+                name = "<span foreground=\"grey\">%s</span>" % (name,)
 
             self.item_store.append((show, icon, name, item))
 
@@ -443,6 +447,7 @@ class MainWindow(object):
 
     def on_restore_button_clicked(self, button):
         self.editor.restoreToSystem()
+        self.quit()
 
     def on_close_button_clicked(self, button):
         self.quit()
