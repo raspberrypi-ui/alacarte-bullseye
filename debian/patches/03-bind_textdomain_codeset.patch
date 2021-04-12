@@ -1,0 +1,28 @@
+From: Matt Kraai <kraai@ftbfs.org>
+Date: Tue, 10 Nov 2009 05:25:34 -0800
+Subject: Set the character set to UTF-8 since this is what GTK+ expects
+
+Debian #552528
+---
+ Alacarte/MainWindow.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/Alacarte/MainWindow.py b/Alacarte/MainWindow.py
+index 403017b..99dfe43 100644
+--- a/Alacarte/MainWindow.py
++++ b/Alacarte/MainWindow.py
+@@ -24,12 +24,13 @@ from gi.repository import Gtk, GdkPixbuf, Gdk, GMenu
+ import sys
+ import html
+ import os
+-import gettext
++import gettext, locale
+ import shutil
+ 
+ from Alacarte import config
+ gettext.bindtextdomain(config.GETTEXT_PACKAGE, config.localedir)
+ gettext.textdomain(config.GETTEXT_PACKAGE)
++locale.bind_textdomain_codeset(config.GETTEXT_PACKAGE,'UTF-8')
+ 
+ _ = gettext.gettext
+ from Alacarte.MenuEditor import MenuEditor

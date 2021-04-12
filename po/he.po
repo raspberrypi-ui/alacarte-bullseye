@@ -1,0 +1,154 @@
+# Hebrew translation for Alacarte.
+# Copyright (C) 2006-2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the alacarte package.
+#
+# Zohar Snir <zoharsnir@gmail.com>, 2006.
+# fr33domlover <fr33domlover@riseup.net>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?\n"
+"POT-Creation-Date: 2014-09-01 21:48+0300\n"
+"PO-Revision-Date: 2014-09-01 22:24+0300\n"
+"Last-Translator: fr33domlover <fr33domlover@riseup.net>\n"
+"Language-Team: עברית <>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../Alacarte/MainWindow.py:155
+msgid "Name"
+msgstr "שם"
+
+#: ../Alacarte/MainWindow.py:168
+msgid "Show"
+msgstr "הצגה"
+
+#: ../Alacarte/MainWindow.py:176
+msgid "Item"
+msgstr "פריט"
+
+#: ../Alacarte/ItemEditor.py:86
+msgid "Choose an icon"
+msgstr "בחירת סמל"
+
+#: ../Alacarte/ItemEditor.py:215
+msgid "Choose a command"
+msgstr "בחירת פקודה"
+
+#: ../data/alacarte.desktop.in.in.h:1 ../data/alacarte.ui.h:1
+msgid "Main Menu"
+msgstr "תפריט ראשי"
+
+#: ../data/alacarte.desktop.in.in.h:2
+msgid "Add or remove applications from the main menu"
+msgstr "הוספה או הסרה של יישומים בתפריט הראשי"
+
+#: ../data/alacarte.ui.h:2
+msgid "Restore the default menu layout"
+msgstr "שחזור סידור התפריט לברירת המחדל"
+
+#: ../data/alacarte.ui.h:3
+msgid "_New Menu"
+msgstr "תפ_ריט חדש"
+
+#: ../data/alacarte.ui.h:4
+msgid "Ne_w Item"
+msgstr "פריט _חדש"
+
+#: ../data/alacarte.ui.h:5
+msgid "New _Separator"
+msgstr "מפרי_ד חדש"
+
+#: ../data/alacarte.ui.h:6
+msgid "Move Down"
+msgstr "הזזה מטה"
+
+#: ../data/alacarte.ui.h:7
+msgid "Move Up"
+msgstr "הזזה מעלה"
+
+#: ../data/launcher-editor.ui.h:1
+msgid "Launcher Properties"
+msgstr "מאפייני משגר"
+
+#: ../data/launcher-editor.ui.h:2 ../data/directory-editor.ui.h:2
+msgid "Name:"
+msgstr "שם:"
+
+#: ../data/launcher-editor.ui.h:3
+msgid "Command:"
+msgstr "פקודה:"
+
+#: ../data/launcher-editor.ui.h:4 ../data/directory-editor.ui.h:3
+msgid "Comment:"
+msgstr "הערה:"
+
+#: ../data/launcher-editor.ui.h:5
+msgid "Browse"
+msgstr "עיון"
+
+#: ../data/launcher-editor.ui.h:6
+msgid "Launch in Terminal?"
+msgstr "הרצת הפקודה במסוף"
+
+#: ../data/directory-editor.ui.h:1
+msgid "Directory Properties"
+msgstr "מאפייני תיקייה"
+
+#~ msgid "Restore System Configuration"
+#~ msgstr "שחזור תצורת המערכת"
+
+#~ msgid "It_ems:"
+#~ msgstr "_פריטים:"
+
+#~ msgid "Revert Changes?"
+#~ msgstr "האם לבטל שינויים?"
+
+#~ msgid "Revert all menus to original settings?"
+#~ msgstr "האם לשחזר את כל התפריטים להגדרותיהם המקוריות?"
+
+#~ msgid "_Menus:"
+#~ msgstr "_תפריטים:"
+
+#~ msgid "_Revert to Original"
+#~ msgstr "_שחזר להגדרות המקוריות"
+
+#~ msgid "New menu items need a name"
+#~ msgstr "פריט תפריט חדש חייב שם"
+
+#~ msgid "New menus need a name"
+#~ msgstr "תפריטים חדשים חייבים שם"
+
+#~ msgid "Menu Editor"
+#~ msgstr "עורך תפריטים"
+
+#~ msgid "Menu Layout"
+#~ msgstr "תסדיר תפריט"
+
+#~ msgid "A name is required."
+#~ msgstr "חובה לציין שם."
+
+#~ msgid "A command is required."
+#~ msgstr "חובה לציין פקודה."
+
+#~ msgid "Add, change, remove menu entries"
+#~ msgstr "הוסף, שנה והסר פריטי תפריט"
+
+#~ msgid "Copyright © 2006 Travis Watkins"
+#~ msgstr "Copyright © 2006 Travis Watkins"
+
+#~ msgid "Icon:"
+#~ msgstr "סמל:"
+
+#~ msgid "Menu Item Properties"
+#~ msgstr "מאפייני פריט תפריט"
+
+#~ msgid "Simple fd.o compliant menu editor"
+#~ msgstr "עורך תפריטים פשוט תואם fd.o"
+
+#~ msgid "translator-credits"
+#~ msgstr "זוהר שניר"
