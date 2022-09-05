@@ -154,7 +154,7 @@ class ItemEditor(GObject.GObject):
     def save(self):
         util.fillKeyFile(self.keyfile, self.get_keyfile_edits())
         contents, length = self.keyfile.to_data()
-        with open(self.item_path, 'w') as f:
+        with open(self.item_path, 'w', encoding="utf-8") as f:
             f.write(contents)
 
     def run(self):

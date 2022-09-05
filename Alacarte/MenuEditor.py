@@ -16,7 +16,6 @@
 #   License along with this library; if not, write to the Free Software
 #   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-import codecs
 import os
 import xml.dom.minidom
 import xml.parsers.expat
@@ -53,7 +52,7 @@ class MenuEditor(object):
         self.load()
 
     def save(self):
-        with codecs.open(self.path, 'w', 'utf8') as f:
+        with open(self.path, 'w', encoding="utf-8") as f:
             f.write(self.dom.toprettyxml())
 
     def restoreToSystem(self):
@@ -262,7 +261,7 @@ class MenuEditor(object):
 
         contents, length = keyfile.to_data()
 
-        with open(out_path, 'w') as f:
+        with open(out_path, 'w', encoding="utf-8") as f:
             f.write(contents)
 
         self.addItem(new_parent, file_id, dom)
@@ -403,7 +402,7 @@ class MenuEditor(object):
         contents, length = keyfile.to_data()
 
         path = os.path.join(util.getUserItemPath(), file_id)
-        with open(path, 'w') as f:
+        with open(path, 'w', encoding="utf-8") as f:
             f.write(contents)
 
         return file_id
@@ -425,7 +424,7 @@ class MenuEditor(object):
         contents, length = keyfile.to_data()
 
         path = os.path.join(util.getUserDirectoryPath(), file_id)
-        with open(path, 'w') as f:
+        with open(path, 'w', encoding="utf-8") as f:
             f.write(contents)
         return file_id
 
